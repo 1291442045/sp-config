@@ -9,15 +9,21 @@ spring:
   
 eureka:
   instance:
-    ### 蹇冭烦闂撮殧鏃堕棿,榛樿30绉�
+    ### 韫囧啳鐑﹂梻鎾閺冨爼妫�,姒涙顓�30缁夛拷
     lease-renewal-interval-in-seconds: 30
   client:
-    ### 鎷夊彇娉ㄥ唽淇℃伅鏃堕棿,榛樿30绉�
+    ### 閹峰褰囧▔銊ュ斀娣団剝浼呴弮鍫曟？,姒涙顓�30缁夛拷
     registry-fetch-interval-seconds: 30
     service-url:
-       ### 榛樿浣嶇疆,鍙互淇敼涓哄叿浣撳湴鐞嗕綅缃�,姣斿beijing,shangHai,shenZhen 绛�,
-       #琛ㄧずeureka鏈嶅姟鍣ㄧ殑閮ㄧ讲浣嶇疆
+       ### 姒涙顓绘担宥囩枂,閸欘垯浜掓穱顔芥暭娑撳搫鍙挎担鎾虫勾閻炲棔缍呯純锟�,濮ｆ柨顩eijing,shangHai,shenZhen 缁涳拷,
+       #鐞涖劎銇歟ureka閺堝秴濮熼崳銊ф畱闁劎璁叉担宥囩枂
       defaultZone: http://eureka1:2001/eureka
+      
+management:
+  endpoints:
+    web:
+      exposure:
+        include: bus-refresh
       
 ---
 spring:

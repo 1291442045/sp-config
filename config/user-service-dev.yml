@@ -22,6 +22,12 @@ eureka:
        ### 榛樿浣嶇疆,鍙互淇敼涓哄叿浣撳湴鐞嗕綅缃�,姣斿beijing,shangHai,shenZhen 绛�,
        #琛ㄧずeureka鏈嶅姟鍣ㄧ殑閮ㄧ讲浣嶇疆
       defaultZone: http://eureka1:2001/eureka
+      
+management:
+  endpoints:
+    web:
+      exposure:
+        include: bus-refresh
   
 ---
 spring.profiles: user1
