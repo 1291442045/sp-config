@@ -2,21 +2,17 @@ spring:
   application:
     name: item-service
   rabbitmq:
-    host: 192.168.44.129
+    host: 192.168.44.130
     port: 5672
     username: admin
     password: admin
   
 eureka:
   instance:
-    ### 韫囧啳鐑﹂梻鎾閺冨爼妫�,姒涙顓�30缁夛拷
     lease-renewal-interval-in-seconds: 30
   client:
-    ### 閹峰褰囧▔銊ュ斀娣団剝浼呴弮鍫曟？,姒涙顓�30缁夛拷
     registry-fetch-interval-seconds: 30
     service-url:
-       ### 姒涙顓绘担宥囩枂,閸欘垯浜掓穱顔芥暭娑撳搫鍙挎担鎾虫勾閻炲棔缍呯純锟�,濮ｆ柨顩eijing,shangHai,shenZhen 缁涳拷,
-       #鐞涖劎銇歟ureka閺堝秴濮熼崳銊ф畱闁劎璁叉担宥囩枂
       defaultZone: http://eureka1:2001/eureka
       
 management:
